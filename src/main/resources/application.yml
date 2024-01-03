@@ -1,0 +1,14 @@
+logging:
+  level:
+    root: info
+    org.springframework: info
+    com.redeyefrog: debug
+  pattern:
+    console: "%red(%d{yyyy-MM-dd HH:mm:ss}) %yellow([%thread]) %highlight(%-5level) %logger - %green(%msg%n)"
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    static-path-pattern: /** # Path pattern used for /static, /public, /resources, /META-INF/resources
